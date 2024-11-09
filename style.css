@@ -1,0 +1,120 @@
+.box {
+
+    width: 100%;          /* Ensure box takes full width of its column */
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    overflow: hidden;      /* Prevents content from spilling out */
+}
+
+.img-fluid {
+    max-width: 100%;       /* Ensures images are responsive */
+    height: auto;
+}
+
+html body {
+    background-color: #cdced1;
+
+}
+
+
+/*.container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    padding: 16px;
+    margin: 0 auto;
+}
+
+
+.box {
+    border: 1px solid #ccc;
+    padding: 16px;
+    text-align: center;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+}
+*/
+
+/* Centered Modal Styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+    opacity: 0; /* Initially transparent */
+}
+
+.modal.show { 
+    display: flex; /* Display flex when active */
+    opacity: 1; /* Fade in the overlay */
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    width: 300px;
+    border-radius: 5px;
+    text-align: center;
+    transform: scale(0.7); /* Start with a smaller scale */
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+.modal.show .modal-content {
+    transform: scale(1); /* Scale up when active */
+}
+
+.close-button {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+.custom-navbar {
+    background-color: #1E1E1E;
+}
+
+.custom-navbar .navbar-nav .nav-link {
+
+    color: #cfcbcb;
+}
+
+.custom-navbar .navbar-nav .nav-link.active{
+    color: #edeef0; 
+}
+
+@font-face {
+    font-family: 'dogica';
+    src: url('fonts/webdogica/dogicapixel-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'dogica', sans-serif;
+}
+
+h1 {
+    font-family: 'dogica', sans-serif;
+    font-size: 2em;
+    color: black;
+}
+
+* {
+    font-family: 'dogica', sans-serif;
+}
